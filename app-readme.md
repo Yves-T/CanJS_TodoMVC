@@ -1,4 +1,4 @@
-# CamJs • [TodoMVC](http://todomvc.com)
+# CanJs • [TodoMVC](http://todomvc.com)
 
 ## Implementation
 
