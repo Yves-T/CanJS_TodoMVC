@@ -1,0 +1,24 @@
+<todos-app>
+	<section class="todoapp">
+		<header class="header">
+			<h1>todos</h1>
+			<todos-create></todos-create>
+		</header>
+		<section class="main">
+			<input class="toggle-all" type="checkbox">
+			<label for="toggle-all">Mark all as complete</label>
+			<todos-list todos="displayedTodos"></todos-list>
+		</section>
+		<footer class="footer">
+			<span class="todo-count"><strong>{{todos.activeCount}}</strong>
+				{{plural "item" todos.activeCount}} left
+			</span>
+			<ul class="filters">
+				<li>{{{filterLink "All" undefined}}}</li>
+				<li>{{{filterLink "Active" "active"}}}</li>
+				<li>{{{filterLink "Completed" "completed"}}}</li>
+			</ul>
+			<button class="clear-completed">Clear completed ({{todos.completedCount}})</button>
+		</footer>
+	</section>
+</todos-app>
